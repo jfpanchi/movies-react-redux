@@ -9,7 +9,7 @@ const RoutesComponents = () => (
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/movieResults/:title' element={<MovieResults/>}></Route>
-            <Route path='/movieDetails' element={<MovieDetail/>}></Route>
+            <Route path='/movieDetails/:movieId' element={<MovieDetail/>}></Route>
         </Routes>
     </BrowserRouter>
 )
