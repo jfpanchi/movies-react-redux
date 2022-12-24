@@ -1,13 +1,13 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 const headers = {
-    'X-RapidAPI-Key': '0284bd2421msha892f01f4e4d83bp10ea1ajsn436a70305b49',
-    'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+    'X-RapidAPI-Key': '80dc7592edmsh1e88d2f76f36580p16bfd1jsn8e9428ab6bb6',
+    'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
 }
 
 export const moviesApi = createApi({
     reducerPath: 'moviesApi',
-    baseQuery: fetchBaseQuery({baseUrl:'https://imdb8.p.rapidapi.com'}),
+    baseQuery: fetchBaseQuery({baseUrl:'https://online-movie-database.p.rapidapi.com'}),
     endpoints: (builder) => ({
         fetchMovies: builder.query({
             query: (title) => ({
